@@ -135,16 +135,16 @@ endif
 SOONG_CONFIG_lineageQcomVars_qti_vibrator_effect_lib := $(TARGET_QTI_VIBRATOR_EFFECT_LIB)
 
 # libfmjni
-ifeq ($(BOARD_HAVE_QCOM_FM),true)
-    PRODUCT_SOONG_NAMESPACES += \
-        vendor/qcom/opensource/libfmjni
-else ifeq ($(BOARD_HAVE_BCM_FM),true)
-    PRODUCT_SOONG_NAMESPACES += \
-        hardware/broadcom/fm
-else ifeq ($(BOARD_HAVE_SLSI_FM),true)
-    PRODUCT_SOONG_NAMESPACES += \
-        hardware/samsung_slsi/fm
-else ifneq ($(BOARD_HAVE_MTK_FM),true)
-    PRODUCT_SOONG_NAMESPACES += \
-        packages/apps/FMRadio/jni/fmr
-endif
+# ifeq ($(BOARD_HAVE_QCOM_FM),true)
+#     PRODUCT_SOONG_NAMESPACES += \
+#         vendor/qcom/opensource/libfmjni
+# else ifeq ($(BOARD_HAVE_BCM_FM),true)
+#     PRODUCT_SOONG_NAMESPACES += \
+#         hardware/broadcom/fm
+# else ifeq ($(BOARD_HAVE_SLSI_FM),true)
+#     PRODUCT_SOONG_NAMESPACES += \
+#         hardware/samsung_slsi/fm
+# else ifneq ($(BOARD_HAVE_MTK_FM),true)
+#     PRODUCT_SOONG_NAMESPACES += \
+#         packages/apps/FMRadio/jni/fmr
+# endif
